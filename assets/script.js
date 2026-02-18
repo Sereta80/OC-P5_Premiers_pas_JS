@@ -1,3 +1,4 @@
+// Slide header
 const slides = [
 	{
 		"image":"slide1.jpg",
