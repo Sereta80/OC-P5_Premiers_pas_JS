@@ -18,6 +18,8 @@ const slides = [
 	}
 ]
 
+
+// Arrows
 const arrowLeft = document.querySelector(".arrow_left");
 arrowLeft.addEventListener("click", () => {
 	console.log("J'ai cliqué sur arrowLeft")
@@ -27,3 +29,27 @@ const arrowRight = document.querySelector(".arrow_right");
 arrowRight.addEventListener("click", () => {
 	console.log("J'ai cliqué sur arrowRight")
 });
+
+
+// Dots
+let baliseDots = document.querySelector('.dots')
+
+// 1ère méthode avec for
+// for (let i = 0; i < slides.length; i++) {
+// 	let newDot = document.createElement("div")
+// 	newDot.classList.add("dot")
+// 	if (i === 0) {
+// 		newDot.classList.add("dot_selected")
+// 	}
+// 	baliseDots.appendChild(newDot)
+// }
+
+// 2ème méthode avec forEach
+slides.forEach((slide, index) => {
+	let newDot = document.createElement("div")
+	newDot.classList.add("dot")
+	if (index === 0) {
+		newDot.classList.add("dot_selected")
+	}
+	baliseDots.appendChild(newDot)
+})
