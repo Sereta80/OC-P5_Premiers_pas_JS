@@ -24,8 +24,6 @@ let currentIndex = 0;
 // Arrows
 const arrowLeft = document.querySelector(".arrow_left");
 arrowLeft.addEventListener("click", () => {
-	console.log("J'ai cliqué sur arrowLeft");
-	// updateDots('previous');
 	currentIndex --;
 	if (currentIndex < 0) {
 		currentIndex = slides.length - 1;
@@ -35,8 +33,6 @@ arrowLeft.addEventListener("click", () => {
 
 const arrowRight = document.querySelector(".arrow_right");
 arrowRight.addEventListener("click", () => {
-	console.log("J'ai cliqué sur arrowRight");
-	// updateDots('next');
 	currentIndex ++;
 	if (currentIndex > slides.length - 1) {
 		currentIndex = 0;
@@ -47,18 +43,6 @@ arrowRight.addEventListener("click", () => {
 
 // Dots
 let baliseDots = document.querySelector('.dots');
-
-// 1ère méthode avec for
-// for (let i = 0; i < slides.length; i++) {
-// 	let newDot = document.createElement("div")
-// 	newDot.classList.add("dot")
-// 	if (i === 0) {
-// 		newDot.classList.add("dot_selected")
-// 	}
-// 	baliseDots.appendChild(newDot)
-// }
-
-// 2ème méthode avec forEach
 slides.forEach((slide, index) => {
 	let newDot = document.createElement("div")
 	newDot.classList.add("dot")
@@ -70,28 +54,6 @@ slides.forEach((slide, index) => {
 
 // Gestion du slider
 const allDots = document.querySelectorAll(".dots .dot");
-
-// function updateDots(order) {
-// 	console.log(allDots)
-// 	const selected = document.querySelector(".dot_selected")
-// 	const dotsList = Array.from(allDots).indexOf(selected)
-// 	console.log(dotsList)
-// 	allDots[dotsList].classList.remove("dot_selected")
-// 	if (order === 'previous') {
-// 		if (dotsList-1 < 0) {
-// 			allDots[allDots.length-1].classList.add("dot_selected")
-// 		} else {
-// 			allDots[dotsList-1].classList.add("dot_selected")
-// 		}
-// 	} else {
-// 		if (dotsList+1 > allDots.length-1) {
-// 			allDots[0].classList.add("dot_selected")
-// 		} else {
-// 			allDots[dotsList+1].classList.add("dot_selected")
-// 		}
-// 	}
-// }
-
 function updateSlider() {
 	// 1. Mettre à jour le point sélectionné
 	allDots.forEach((dot, index) => {
