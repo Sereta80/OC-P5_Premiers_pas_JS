@@ -1,7 +1,7 @@
 # Projet OpenClassrooms : <img width="23" height="24" alt="tricolor-icon" src="https://github.com/user-attachments/assets/982057aa-1b66-4a69-bee0-8337fb5df8ad" /> Print It - Carrousel JavaScript
 Ce projet consiste à dynamiser un site statique pour une imprimerie nommée Print It.<br> Il a été réalisé dans le cadre de la formation "Intégrateur Web" d'OpenClassrooms.<br>
 
-<img width="1425" height="3301" alt="preview-Print-It-readme" src="https://github.com/user-attachments/assets/1b845772-fad9-4dc8-b856-946265c36f77" />
+<img width="400" alt="preview-Print-It-readme" src="https://github.com/user-attachments/assets/1b845772-fad9-4dc8-b856-946265c36f77" />
 
 ## 🎯 Objectifs du projet
 L'objectif principal était de créer un slider interactif fonctionnel en utilisant JavaScript (manipulation du DOM, événements et tableaux).
